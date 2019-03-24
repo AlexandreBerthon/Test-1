@@ -1,9 +1,23 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+    <!-- Here we add the button for the left menu-->
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>About</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <!-- Here i just created a ion-item in order to display the informations for the about page-->
+    <ion-item>
+        <ion-label text-wrap>
+          <p text-justify>I am a third-year university student in business information technology and I would like to enhance my capabilities in this field with a strong experience in an IT company.
+             The IT knowledge I acquired during my studies makes me a motivated and rigorous person able to carry out a project.
+          </p>
+          <ion-text color="dark">
+            <p>I hope you will like my app !</p>
+          </ion-text>
+        </ion-label>
+      </ion-item>
+</ion-content>

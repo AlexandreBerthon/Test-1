@@ -1,41 +1,230 @@
 <ion-header>
+  <!-- Here we add the button for the left menu-->
   <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>CV</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
+  <!-- Here I add a picture of me for the CV-->
+    <ion-img src="/assets/Mypicture.jpg"></ion-img>
+
+    <ion-item>
+        <ion-label text-wrap>
+            <ion-text color="primary">
+                <h1>Welcome to my Ionic app CV</h1>
+            </ion-text>
+            <p>I this app, you will go through all the parts of my CV</p>
+        </ion-label>
+    </ion-item>
+
+    <!-- Here I create a first list to display my education background -->
+    <ion-list lines="none" >
+      <!-- Here I add to create a css id selector in order to display the icon in the same line as the text-->
+      <ion-list-header id="headerIcons">
+          <ion-icon name="school" style="zoom:2.0;"></ion-icon>
+          Education
       </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
+
+      <ion-item>
+        <ion-label text-wrap>
+            <ion-text color="primary">
+                <h2>2019 – DUETI</h2>
+            </ion-text>
+            <p>Laurea University of Applied Sciences - Helsinki, Finland</p>
+        </ion-label>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
+
+      <ion-item>
+          <ion-label text-wrap>
+              <ion-text color="primary">
+                  <h2>2018 – DUT Informatique</h2>
+              </ion-text>
+              <p>Université Savoie Mont Blanc - IUT Annecy-le-Vieux, France</p>
+              <p>2nd year university technical diploma in computer sciences</p>
+          </ion-label>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
+
+      <ion-item>
+          <ion-label text-wrap>
+              <ion-text color="primary">
+                  <h2>2016 – French Baccalaureate STI2D/SIN</h2>
+              </ion-text>
+              <p>Louis Lachenal High School - Argonay, France </p>
+              <p>High school diploma in science and technology of the industry and sustainable development specialized in information system and digital, with honors</p>
+          </ion-label>
       </ion-item>
     </ion-list>
+
+    <!-- I do the same for my work experiences-->
+    <ion-list lines="none" >
+        <ion-list-header id="headerIcons">
+            <ion-icon name="construct" style="zoom:2.0;"></ion-icon>
+            Work experiences
+        </ion-list-header>
+  
+        <ion-item>
+          <ion-label text-wrap>
+              <ion-text color="primary">
+                  <h2>2017-2018 – Fondation de France (foundation)</h2>
+              </ion-text>
+              <p>Paris, France, Team working</p>
+              <p>Mission: Developing an Android application to visit the Sassenage’s castle (Grenoble) using Java and Android</p>
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+            <ion-label text-wrap>
+                <ion-text color="primary">
+                    <h2>Summer 2016 – Tefal (cookware manufacturer)</h2>
+                </ion-text>
+                <p>Rumilly, France</p>
+                <p>Mission: temporary job, working as an operator/conductor in an assembly line</p>
+            </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list lines="none" >
+          <ion-list-header id="headerIcons">
+              <ion-icon name="fitness" style="zoom:2.0;"></ion-icon>
+              Skills
+          </ion-list-header>
+    
+          <ion-item>
+            <ion-label text-wrap>
+                <ion-text color="primary">
+                    <h2>Angular</h2>
+                </ion-text>
+                <ion-progress-bar value="0.5"></ion-progress-bar>
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+              <ion-label text-wrap>
+                  <ion-text color="primary">
+                      <h2>Cordova</h2>
+                  </ion-text>
+                  <ion-progress-bar value="0.7"></ion-progress-bar>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+                <ion-label text-wrap>
+                    <ion-text color="primary">
+                        <h2>Ionic Framework</h2>
+                    </ion-text>
+                    <ion-progress-bar value="0.5"></ion-progress-bar>
+                </ion-label>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label text-wrap>
+                      <ion-text color="primary">
+                          <h2>HTML, CSS, JavaScript</h2>
+                      </ion-text>
+                      <ion-progress-bar value="0.8"></ion-progress-bar>
+                  </ion-label>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label text-wrap>
+                        <ion-text color="primary">
+                            <h2>Java</h2>
+                        </ion-text>
+                        <ion-progress-bar value="0.7"></ion-progress-bar>
+                    </ion-label>
+                  </ion-item>
+
+                  <ion-item>
+                      <ion-label text-wrap>
+                          <ion-text color="primary">
+                              <h2>JQuery</h2>
+                          </ion-text>
+                          <ion-progress-bar value="0.5"></ion-progress-bar>
+                      </ion-label>
+                  </ion-item>
+       </ion-list>
+
+       <ion-list lines="none" >
+          <ion-list-header id="headerIcons">
+              <ion-icon name="globe" style="zoom:2.0;"></ion-icon>
+              Languages
+          </ion-list-header>
+    
+          <ion-item>
+            <ion-icon src="assets/fr.svg" slot="start"></ion-icon>
+            <ion-label text-wrap>
+                <ion-text color="primary">
+                    <h2>French</h2>
+                </ion-text>
+                <ion-progress-bar value="1"></ion-progress-bar>
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+              <ion-icon src="assets/gb.svg" slot="start"></ion-icon>
+              <ion-label text-wrap> 
+                  <ion-text color="primary">
+                      <h2>English</h2>
+                  </ion-text>
+                  <ion-progress-bar value="0.7"></ion-progress-bar>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon src="assets/es.svg" slot="start"></ion-icon>
+                <ion-label text-wrap>
+                    <ion-text color="primary">
+                        <h2>Spanish</h2>
+                    </ion-text>
+                    <ion-progress-bar value="1"></ion-progress-bar>
+                </ion-label>
+              </ion-item>
+       </ion-list>
+
+       <ion-list lines="none" >
+          <ion-list-header id="headerIcons">
+              <ion-icon name="person" style="zoom:2.0;"></ion-icon>
+              Interests
+          </ion-list-header>
+    
+          <ion-item>
+            <ion-icon src="assets/kung-fu.svg" slot="start"></ion-icon>
+            <ion-label text-wrap>
+                <ion-text color="primary">
+                    <h2>Goshindo</h2>
+                </ion-text>
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+              <ion-icon src="assets/football.svg" slot="start"></ion-icon>
+              <ion-label text-wrap> 
+                  <ion-text color="primary">
+                      <h2>Soccer</h2>
+                  </ion-text>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+                <ion-icon src="assets/innovation.svg" slot="start"></ion-icon>
+                <ion-label text-wrap>
+                    <ion-text color="primary">
+                        <h2>New technologies</h2>
+                    </ion-text>
+                </ion-label>
+              </ion-item>
+
+              <ion-item>
+                  <ion-icon src="assets/film.svg" slot="start"></ion-icon>
+                  <ion-label text-wrap>
+                      <ion-text color="primary">
+                          <h2>Cinema</h2>
+                      </ion-text>
+                  </ion-label>
+                </ion-item>
+       </ion-list>
 </ion-content>

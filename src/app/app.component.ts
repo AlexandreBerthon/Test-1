@@ -9,6 +9,28 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
+
+  // Here create a table with all the items we want in the list of our left menu
+
+  public appPage = [
+    {
+      title: 'CV',
+      url: '',
+      icon: 'image'
+    },
+    {
+      title: 'About',
+      url: '/tabs/tab2',
+      icon: 'help-circle-outline'
+    },
+    {
+      title: 'Contact',
+      url: '/tabs/tab3',
+      icon: 'send'
+    },
+  ];
+
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,

@@ -1,9 +1,47 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+      <!-- Here we add the button for the left menu-->
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Contact</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <!-- Here I have created a list to show all my contact informations-->
+  <ion-list>
+    <ion-list-header>Contact page</ion-list-header>
+
+    <ion-item>
+        <ion-icon name="mail" slot="start"></ion-icon>
+        <ion-label text-wrap>
+          <ion-text color="primary">
+            <h3>Email</h3>
+          </ion-text>
+          <p>berthon.alex@gmail.com</p>
+        </ion-label>
+    </ion-item>
+
+    <ion-item>
+        <ion-icon name="call" slot="start"></ion-icon>
+        <ion-label text-wrap>
+          <ion-text color="primary">
+            <h3>Phone</h3>
+          </ion-text>
+          <p>+33 6 59 11 37 93</p>
+        </ion-label>
+    </ion-item>
+
+    <ion-item>
+        <ion-icon name="logo-linkedin" slot="start"></ion-icon>
+        <ion-label text-wrap>
+          <ion-text color="primary">
+            <h3>LinkedIN</h3>
+          </ion-text>
+          <p>Alexandre Berthon</p>
+        </ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
